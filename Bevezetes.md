@@ -141,7 +141,7 @@ Készítsünk egy olyan oldalt, amin megjelenik egy link, és rákattintásra eg
   </body>
   </html>
 ```  
--><button onclick="window.location.href = 'bevezetes02demo.html';">View sample 2</button><-
+<div style="width: 100%; text-align: center;"><button onclick="window.location.href = 'bevezetes02demo.html';">View sample 2</button></div>
 
 <p style="text-align:justify">A 15. sor megakadályozza az alapértelmezett viselkedést, vagyis a link ne töltődjön be, hanem egy figyelmeztető ablak bukkanjon fel.
 
