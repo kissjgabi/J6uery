@@ -2,7 +2,7 @@
 
 ### Kialakulás és használat
 
-<p style="text-align:justify;">A jQuery egy népszerű JavaScript library, mely a HTML kód, és a kliensoldali JavaScript közötti kapcsolatot hangsúlyozza. A jQuery egy erőteljes és népszerű JavaScript keretrendszer, amit John Resig alkotott meg és mutatta be, elsőként a 2006-os New York-i Barcamp-en. A framework a HTML-t és a JavaScript-et igyekszik közelebbi kapcsolatba hozni. Igyekszik a JavaScript-ben megismert technikákat használhatóbbá és egyszerűbbé tenni úgy, hogy az eredeti nyelv erejéből semmit nem veszít. Úgy is írhatunk jQuery kódot, ha nem ismerjük a JavaScript-et, azonban ahhoz hogy a megfelelő eredmények érjük el feltétlenül fontos, hogy kellően ismerjük az alapot, amire a keretrendszer épül. Filozófiája, hogy amennyire csak lehetséges leválassza a JavaScript kódot a HTML-ből, és különböző eseményvezérlőkön, és azonosítókon keresztül kommunikáljon a weblap HTML elemeivel. A jQuery könnyebbé teszi a javascript használatát:</p>
+<p style="text-align:justify;">A jQuery egy népszerű JavaScript library, mely a HTML kód, és a kliensoldali JavaScript közötti kapcsolatot hangsúlyozza. A jQuery egy erőteljes és népszerű JavaScript keretrendszer, amit John Resig alkotott meg és mutatta be, elsőként a 2006-os New York-i Barcamp-en. A framework a HTML-t és a JavaScript-et igyekszik közelebbi kapcsolatba hozni. Igyekszik a JavaScript-ben megismert technikákat használhatóbbá és egyszerűbbé tenni úgy, hogy az eredeti nyelv erejéből semmit nem veszít. Úgy is írhatunk jQuery kódot, ha nem ismerjük a JavaScript-et, azonban ahhoz hogy a megfelelő eredményeket érjük el fontos, hogy kellően ismerjük az alapot, amire a keretrendszer épül. Filozófiája, hogy amennyire csak lehetséges leválassza a JavaScript kódot a HTML-ből, és különböző eseményvezérlőkön, és azonosítókon keresztül kommunikáljon a weblap HTML elemeivel. A jQuery könnyebbé teszi a javascript használatát:</p>
 
 + Kezelhetünk eseményeket, pl amikor a felhasználó egy gombra kattint, jelenjen meg egy üzenet.  
 + Létre hozhatunk áttűnéseket, mozgásokat és egyéb látványos effekteket  
@@ -42,11 +42,22 @@
   </body>
   </html>
 ```
-<p style="text-align:justify"></p>
+### A Dokumentum Objektum Modell (DOM)
 
-<p style="text-align:justify"></p>
+<p style="text-align:justify">A DOM egy standard objektummodell, amire a HTML, XML is épül. A modell egymással gyerek-szülő kapcsolatban álló objektumok rendszere. A kialakulása a böngészőháború kezdetére tehető, fejlődése a böngészők, illetve a JavaScript fejlődésével köthető össze. A DOM segítségével érhetjük el a HTML dokumentumunk elemeit, valamint a böngésző eseményeit, mint a kattintás, vagy a görgetés. A DOM-ban az elemeket node-nak, vagyis csomópontnak nevezzük.</p>
 
-<p style="text-align:justify"></p>
+#### Alap DOM szerkezet bemutatása:
+```html
+    <div>
+        <p>Szöveg</p>
+        <p>Szöveg</p>
+    </div>
+```
+
+<p style="text-align:justify">A DOM egyes csomópontjaira egykönnyen tudunk hivatkozni illetve bejárni azokat jQuery segítségével.</p>
+
+<p style="text-align:justify">A JavaScript kódot, vagy a linket a külső fájlhoz két helyre tudjuk beszúrni a HTML fájlunkban: a head részbe és a záró body tag elé. Az utóbbinak a teljesítmény szempontjából van jelentősége, hiszen a kód a HTML kód után töltődik le.  
+Ezzel elő is jön az első probléma a JavaScript kódok futtatása során. Ha a JavaScript/jQuery kód a head részben található, akkor a kód az előtt fut le, mielőtt létre jönne maga a HTML dokumentum és annak a DOM-ja, vagyis mivel a kód lefutásakor még nem létezik, így módosítani/hozzáférni sem tudunk. Erre jelenthet megoldást a már említett záró body tag előtti elhelyezés, vagy a JavaScript-ben használatos onload eljárás jQuery megfelelője a ready() eljárás.</p>
 
 <p style="text-align:justify"></p>
 
