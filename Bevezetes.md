@@ -110,9 +110,24 @@ Próbáljuk ki a jQuery mindkét féle beágyazási módját a következő péld
 Készítsünk egy olyan oldalt, amin megjelenik egy link, de rá kattintva egy figyelmeztető ablak ugrik fel.</p>
 
 ```html
+<!doctype html>
+<html lang="hu">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-
-
+    <title>Demo</title>
+  </head>
+  <body>
+      <a src="https://jquery.com">JQuery</a>
+      <script src="jquery.js"></script>
+      <script>
+          
+          <!-- JAVASCRIPT CODE --> 
+          
+      </script>
+  </body>
+  </html>
 ```
 
 <p style="text-align:justify">A 15. sor megakadályozza az alapértelmezett viselkedést, azaz, hogy ne a link töltődjön be, hanem egy figyelmeztető ablak bukkanjon fel.
