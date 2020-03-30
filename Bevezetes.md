@@ -34,7 +34,8 @@
   </head>
   <body>
       <a src="https://jquery.com">JQuery</a>
-      <script src="jquery.js">
+      <script src="jquery.js"></script>
+      <script>
           
           <!-- JAVASCRIPT CODE --> 
           
@@ -79,49 +80,42 @@ Ugyanennek a megoldásnak létezik egy rövidebb változata, melyben a $ (jQuery
     });
 ```
 
-<p style="text-align:justify">A fent bemutatott kódrészlet, miután a dokumentum betöltött, kattinthatóvá teszi a div elemünket. Az a kattintás hatására az egész törzs hátterét #ccc értékűre állítja.</p>
+<p style="text-align:justify">A fent bemutatott kódrészlet, miután a dokumentum betöltött, kattinthatóvá teszi a div elemünket. Az a kattintás hatására az egész törzs hátterét #ccc értékűre állítja.
 
-```js
-    $(function() {
-        console.log( "Ready!" );
-    });
-```
-
-<p style="text-align:justify"></p>
-
-
-```js
-    $(function() {
-        console.log( "Ready!" );
-    });
-```
-
-<p style="text-align:justify"></p>
+Próbáljuk ki a jQuery mindkét féle beágyazási módját a következő példán:</p>
 
 ```html
-    $(function() {
-        console.log( "Ready!" );
-    });
+<!doctype html>
+<html lang="hu">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <title>Demo</title>
+  </head>
+  <body>
+      <a src="https://jquery.com">JQuery</a>
+      <script src="jquery.js"></script>
+      <script>
+          
+          <!-- JAVASCRIPT CODE --> 
+          
+      </script>
+  </body>
+  </html>
 ```
 
-<p style="text-align:justify"></p>
+<p style="text-align:justify">A fejrészben megadott jQuery kódban – ahol kötelezően meg kellett adnunk a dokumentum betöltésére vonatkozó eseményt – a weblap akármelyik részére történő klikkelés esetén a span típusú jquery azonosítójú HTML tag betűszíne kékre vált. Míg a törzs végén specifikált kódban, ha jquery azonosítójú elem fölé visszük az egeret, akkor a demo osztályú szöveg dőlt betűstílusúvá válik (itt nem szükséges a dokumentum betöltődésére megszorítást tennünk).
+
+Készítsünk egy olyan oldalt, amin megjelenik egy link, de rá kattintva egy figyelmeztető ablak ugrik fel.</p>
+
+```html
 
 
-```js
-    $(function() {
-        console.log( "Ready!" );
-    });
-```
-
-<p style="text-align:justify"></p>
-
-
-```js
-    $(function() {
-        console.log( "Ready!" );
-    });
-```
-
-<p style="text-align:justify"></p>
 
 ```
+
+<p style="text-align:justify">A 15. sor megakadályozza az alapértelmezett viselkedést, azaz, hogy ne a link töltődjön be, hanem egy figyelmeztető ablak bukkanjon fel.
+
+A jQuery egy lenyűgöző eszköz, ahhoz hogy hatékonyabbak legyünk. Az elsajátítása egy kis előismeret után meglepően gyorsan véghez vihető. Azonban fontos, hogy tisztában legyünk a HTML/CSS, JavaScript, DOM alapjaival. Természetesen előnye és hátránya is van a keretrendszerek használatának. Mivel nagy mennyiségű kódrészletet tesz közénk és a programnyelv közé figyelnünk kell rá, hogy a lehető leghatékonyabb kódot írjuk meg, hogy a programjaink kellően gyorsak legyenek. Igaz ez hátrány, de ez lehet előny is, hiszen csak jobb kód írására ösztönöz minket. Előny, hogy a böngészők kompatibilitásával nem kell foglalkoznunk, megoldja a jQuery.</p>
+
