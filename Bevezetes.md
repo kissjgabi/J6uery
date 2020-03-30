@@ -112,7 +112,7 @@ Próbáljuk ki a jQuery mindkét féle beágyazási módját a következő péld
   </body>
   </html>
 ```
-<button style="margin: 0 auto;" onclick="window.location.href = 'bevezetes01demo.html';">View sample01</button>
+<div style="width: 100%; text-align: center;"><button onclick="window.location.href = 'bevezetes01demo.html';">View sample 1</button></button>
 
 <p style="text-align:justify">A fejrészben megadott jQuery kódban – ahol kötelezően meg kellett adnunk a dokumentum betöltésére vonatkozó eseményt – a weblap akármelyik részére történő klikkelés esetén a span típusú jquery azonosítójú HTML tag betűszíne kékre vált. Míg a törzs végén specifikált kódban, ha jquery azonosítójú elem fölé visszük az egeret, akkor a demo osztályú szöveg dőlt betűstílusúvá válik (itt nem szükséges a dokumentum betöltődésére megszorítást tennünk).
 
@@ -141,7 +141,7 @@ Készítsünk egy olyan oldalt, amin megjelenik egy link, és rákattintásra eg
   </body>
   </html>
 ```
-<button style="margin: 0 auto;" onclick="window.location.href = 'bevezetes02demo.html';">View sample02</button>
+<div style="width: 100%; text-align: center;"><button onclick="window.location.href = 'bevezetes02demo.html';">View sample 2</button></button>
 
 <p style="text-align:justify">A 15. sor megakadályozza az alapértelmezett viselkedést, vagyis a link ne töltődjön be, hanem egy figyelmeztető ablak bukkanjon fel.
 
