@@ -101,11 +101,6 @@ Ugyanennek a megoldásnak létezik egy rövidebb változata, melyben a $ (jQuery
     $(function() {
         console.log( "Ready!" );
     });
-
-```js
-    $(function() {
-        console.log( "Ready!" );
-    });
 ```
 
 <p style="text-align:justify"></p>
