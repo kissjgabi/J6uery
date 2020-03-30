@@ -56,7 +56,8 @@
 
 <p style="text-align:justify">A DOM egyes csomópontjaira egykönnyen tudunk hivatkozni illetve bejárni azokat jQuery segítségével.</p>
 
-<p style="text-align:justify">A JavaScript kódot, vagy a linket a külső fájlhoz két helyre tudjuk beszúrni a HTML fájlunkban: a head részbe és a záró body tag elé. Az utóbbinak a teljesítmény szempontjából van jelentősége, hiszen a kód a HTML kód után töltődik le.  
+<p style="text-align:justify">A JavaScript kódot, vagy a linket a külső fájlhoz két helyre tudjuk beszúrni a HTML fájlunkban: a head részbe és a záró body tag elé. Az utóbbinak a teljesítmény szempontjából van jelentősége, hiszen a kód a HTML kód után töltődik le.
+    
 Ezzel elő is jön az első probléma a JavaScript kódok futtatása során. Ha a JavaScript/jQuery kód a head részben található, akkor a kód az előtt fut le, mielőtt létre jönne maga a HTML dokumentum és annak a DOM-ja, vagyis mivel a kód lefutásakor még nem létezik, így módosítani/hozzáférni sem tudunk. Erre jelenthet megoldást a már említett záró body tag előtti elhelyezés, vagy a JavaScript-ben használatos onload eljárás jQuery megfelelője a ready() eljárás.</p>
 
 <p style="text-align:justify"></p>
