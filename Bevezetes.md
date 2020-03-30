@@ -92,14 +92,22 @@ Próbáljuk ki a jQuery mindkét féle beágyazási módját a következő péld
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
     <title>Demo</title>
+      
+    <script src="jquery.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("*").click(function() {
+                $("span#jquery").css("color", "blue");
+          });
+        });
+    </script>
   </head>
   <body>
-      <a src="https://jquery.com">JQuery</a>
-      <script src="jquery.js"></script>
+      <span id=jquery>JQuery</span> <span class=demo>demo</span>
       <script>
-          
-          <!-- JAVASCRIPT CODE --> 
-          
+          $("#jquery").hover(function() {
+            $(".demo").css("font-style", "italic");
+          });
       </script>
   </body>
   </html>
