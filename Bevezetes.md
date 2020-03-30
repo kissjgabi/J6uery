@@ -107,7 +107,7 @@ Próbáljuk ki a jQuery mindkét féle beágyazási módját a következő péld
 
 <p style="text-align:justify">A fejrészben megadott jQuery kódban – ahol kötelezően meg kellett adnunk a dokumentum betöltésére vonatkozó eseményt – a weblap akármelyik részére történő klikkelés esetén a span típusú jquery azonosítójú HTML tag betűszíne kékre vált. Míg a törzs végén specifikált kódban, ha jquery azonosítójú elem fölé visszük az egeret, akkor a demo osztályú szöveg dőlt betűstílusúvá válik (itt nem szükséges a dokumentum betöltődésére megszorítást tennünk).
 
-Készítsünk egy olyan oldalt, amin megjelenik egy link, de rá kattintva egy figyelmeztető ablak ugrik fel.</p>
+Készítsünk egy olyan oldalt, amin megjelenik egy link, és rákattintásra egy figyelmeztető ablak ugorjon fel.</p>
 
 ```html
 <!doctype html>
@@ -130,7 +130,7 @@ Készítsünk egy olyan oldalt, amin megjelenik egy link, de rá kattintva egy f
   </html>
 ```
 
-<p style="text-align:justify">A 15. sor megakadályozza az alapértelmezett viselkedést, azaz, hogy ne a link töltődjön be, hanem egy figyelmeztető ablak bukkanjon fel.
+<p style="text-align:justify">A 15. sor megakadályozza az alapértelmezett viselkedést, vagyis a link ne töltődjön be, hanem egy figyelmeztető ablak bukkanjon fel.
 
-A jQuery egy lenyűgöző eszköz, ahhoz hogy hatékonyabbak legyünk. Az elsajátítása egy kis előismeret után meglepően gyorsan véghez vihető. Azonban fontos, hogy tisztában legyünk a HTML/CSS, JavaScript, DOM alapjaival. Természetesen előnye és hátránya is van a keretrendszerek használatának. Mivel nagy mennyiségű kódrészletet tesz közénk és a programnyelv közé figyelnünk kell rá, hogy a lehető leghatékonyabb kódot írjuk meg, hogy a programjaink kellően gyorsak legyenek. Igaz ez hátrány, de ez lehet előny is, hiszen csak jobb kód írására ösztönöz minket. Előny, hogy a böngészők kompatibilitásával nem kell foglalkoznunk, megoldja a jQuery.</p>
+A jQuery egy lenyűgöző eszköz, segít abban, hogy hogy hatékonyabbak legyünk. Az elsajátítása egy kis előismeret után meglepően gyorsan véghez vihető. Azonban fontos, hogy tisztában legyünk a HTML/CSS, JavaScript, DOM alapjaival. Természetesen előnye és hátránya is van a keretrendszerek használatának. Mivel nagy mennyiségű kódrészletet tesz közénk és a programnyelv közé figyelnünk kell rá, hogy a lehető leghatékonyabb kódot írjuk meg, hogy a programjaink kellően gyorsak legyenek. Ez ugyan hátrány, de jobb kód írására ösztönöz minket. Előny, hogy a böngészők kompatibilitásával nem kell foglalkoznunk, megoldja a jQuery.</p>
 
