@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="hu">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <title>Bevezetes02Demo</title>
+  </head>
+  <body>
+      <a src="https://jquery.com">JQuery</a>
+      <script src="jquery.js"></script>
+      <script>
+        $(document).ready(function() {
+            $("a").click(function( event ) {
+                alert( "The link is broken!" );
+                event.preventDefault();
+            });
+        });
+      </script>
+  </body>
+  </html>
