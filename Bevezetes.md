@@ -130,9 +130,12 @@ Készítsünk egy olyan oldalt, amin megjelenik egy link, és rákattintásra eg
       <a src="https://jquery.com">JQuery</a>
       <script src="jquery.js"></script>
       <script>
-          
-          <!-- JAVASCRIPT CODE --> 
-          
+        $(document).ready(function() {
+            $("a").click(function( event ) {
+                alert( "The link is broken!" );
+                event.preventDefault();
+            });
+        });
       </script>
   </body>
   </html>
