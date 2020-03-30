@@ -1,7 +1,8 @@
 ## Welcome to J6uery HU Pages
 
-[The pirst page](beginner/first_page/datasheet.md)
+[01 Bevezetés](Bevezetes.md)
+
 ```html
 ```
-[Alerts](beginner/alerts/datasheet.md)
-:
+[02 Kijelölők](Kijelolok.md)
+
