@@ -73,12 +73,13 @@ Ugyanennek a megoldásnak létezik egy rövidebb változata, melyben a $ (jQuery
 
 ```js
     $(function() {
-        console.log( "Ready!" );
+        $("div").click(function() {
+            $("body").css("background", "#ccc");
+        });
     });
 ```
 
-<p style="text-align:justify"></p>
-
+<p style="text-align:justify">A fent bemutatott kódrészlet, miután a dokumentum betöltött, kattinthatóvá teszi a div elemünket. Az a kattintás hatására az egész törzs hátterét #ccc értékűre állítja.</p>
 
 ```js
     $(function() {
