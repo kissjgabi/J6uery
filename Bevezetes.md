@@ -68,7 +68,7 @@ Ezzel elő is jön az első probléma a JavaScript kódok futtatása során. Ha 
     });
 ```
 
-<p style="text-align:justify">A fenti kódrészlet belsejében található console.log() függvény akkor fut le, ha a dokumentum teljesen betöltött. A kijelelőben található document elnevezéssel a dokumentumot jelöljük ki, míg a ready() eljárás segítségével elérhetjük, hogy a kód az oldal letöltődése után fusson le, vagyis akkor amikor már kész a HTML szerkezet.
+<p style="text-align:justify">A fenti kódrészlet belsejében található console.log() függvény akkor fut le, ha a dokumentum teljesen betöltött. A kijelelőben található document elnevezéssel a dokumentumot jelöljük ki, míg a ready() eljárás segítségével elérhetjük, hogy a kód az oldal letöltődése után fusson le, vagyis akkor amikor már kész a HTML szerkezet.  
 
 Ugyanennek a megoldásnak létezik egy rövidebb változata, melyben a $ (jQuery definiáló karakter) után egy üres függvényt nyitunk, amiben elhelyezzük a futtatni kívánt kódot. Az üres függvény hívás egy megszokott eljárás jQuery-ben, amivel még sokat találkozunk az egyéb eljárások visszatérése során.</p>
 
@@ -80,9 +80,10 @@ Ugyanennek a megoldásnak létezik egy rövidebb változata, melyben a $ (jQuery
     });
 ```
 
-<p style="text-align:justify">A fent bemutatott kódrészlet, miután a dokumentum betöltött, kattinthatóvá teszi a div elemünket. Az a kattintás hatására az egész törzs hátterét #ccc értékűre állítja.
+<p style="text-align:justify">A fent bemutatott kódrészlet, miután a dokumentum betöltött, kattinthatóvá teszi a div elemünket. Az a kattintás hatására az egész törzs hátterét #ccc értékűre állítja.</p>
 
-Próbáljuk ki a jQuery mindkét féle beágyazási módját a következő példán:</p>
+#### 1. példa:  
+Próbáljuk ki a jQuery mindkét féle beágyazási módját a következő példán:
 
 ```html
 <!doctype html>
@@ -114,9 +115,10 @@ Próbáljuk ki a jQuery mindkét féle beágyazási módját a következő péld
 ```
 <div style="width: 100%; text-align: center;"><button onclick="window.location.href = 'bevezetes01demo.html';">View sample 1</button></div>  
   
-<p style="text-align:justify">A fejrészben megadott jQuery kódban – ahol kötelezően meg kellett adnunk a dokumentum betöltésére vonatkozó eseményt – a weblap akármelyik részére történő klikkelés esetén a span típusú jquery azonosítójú HTML tag betűszíne kékre vált. Míg a törzs végén specifikált kódban, ha jquery azonosítójú elem fölé visszük az egeret, akkor a demo osztályú szöveg dőlt betűstílusúvá válik (itt nem szükséges a dokumentum betöltődésére megszorítást tennünk).
+<p style="text-align:justify">A fejrészben megadott jQuery kódban – ahol kötelezően meg kellett adnunk a dokumentum betöltésére vonatkozó eseményt – a weblap akármelyik részére történő klikkelés esetén a span típusú jquery azonosítójú HTML tag betűszíne kékre vált. Míg a törzs végén specifikált kódban, ha jquery azonosítójú elem fölé visszük az egeret, akkor a demo osztályú szöveg dőlt betűstílusúvá válik (itt nem szükséges a dokumentum betöltődésére megszorítást tennünk).</p>
 
-Készítsünk egy olyan oldalt, amin megjelenik egy link, és rákattintásra egy figyelmeztető ablak ugorjon fel.</p>
+#### 2. példa:  
+Készítsünk egy olyan oldalt, amin megjelenik egy link, és rákattintásra egy figyelmeztető ablak ugorjon fel.
 
 ```html
 <!doctype html>
@@ -143,7 +145,7 @@ Készítsünk egy olyan oldalt, amin megjelenik egy link, és rákattintásra eg
 ```  
 <div style="width: 100%; text-align: center;"><button onclick="window.location.href = 'bevezetes02demo.html';">View sample 2</button></div>  
   
-<p style="text-align:justify">A 15. sor megakadályozza az alapértelmezett viselkedést, vagyis a link ne töltődjön be, hanem egy figyelmeztető ablak bukkanjon fel.
+<p style="text-align:justify">A 15. sor megakadályozza az alapértelmezett viselkedést, vagyis a link ne töltődjön be, hanem egy figyelmeztető ablak bukkanjon fel.</p>
 
-A jQuery egy lenyűgöző eszköz, segít abban, hogy hogy hatékonyabbak legyünk. Az elsajátítása egy kis előismeret után meglepően gyorsan véghez vihető. Azonban fontos, hogy tisztában legyünk a HTML/CSS, JavaScript, DOM alapjaival. Természetesen előnye és hátránya is van a keretrendszerek használatának. Mivel nagy mennyiségű kódrészletet tesz közénk és a programnyelv közé figyelnünk kell rá, hogy a lehető leghatékonyabb kódot írjuk meg, hogy a programjaink kellően gyorsak legyenek. Ez ugyan hátrány, de jobb kód írására ösztönöz minket. Előny, hogy a böngészők kompatibilitásával nem kell foglalkoznunk, megoldja a jQuery.</p>
+<p style="text-align:justify">A jQuery egy lenyűgöző eszköz, segít abban, hogy hogy hatékonyabbak legyünk. Az elsajátítása egy kis előismeret után meglepően gyorsan véghez vihető. Azonban fontos, hogy tisztában legyünk a HTML/CSS, JavaScript, DOM alapjaival. Természetesen előnye és hátránya is van a keretrendszerek használatának. Mivel nagy mennyiségű kódrészletet tesz közénk és a programnyelv közé figyelnünk kell rá, hogy a lehető leghatékonyabb kódot írjuk meg, hogy a programjaink kellően gyorsak legyenek. Ez ugyan hátrány, de jobb kód írására ösztönöz minket. Előny, hogy a böngészők kompatibilitásával nem kell foglalkoznunk, megoldja a jQuery.</p>
 
