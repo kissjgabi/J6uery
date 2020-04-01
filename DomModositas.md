@@ -14,7 +14,7 @@ Példával szemléltetve a dolog a következőképpen néz ki:
 ```
 
 ```js
-    $(finction() {
+    $(function() {
         var p = $("p");
         
         p.first().text("text() eljárás ");
@@ -47,32 +47,32 @@ Két verziót különböztetünk meg mind a kettőből:
 Az alábbi kód segítségével az első p elemet becsomagoltuk egy div elembe.
 
 ```js
-    $(finction() {
+    $(function() {
         var p = $("p");
         
         p.first().wrap("</pre>");
     });
- ```
+```
 
 <p style="text-align:justify">A wrapAll() eljárással több elemet csomagolhatunk be egyszerre. Jelen esetben két bekezdésünk van, így a wrapAll()-al elérhetjük, hogy mind a két elemet becsomagoljuk egy div elemmel.</p>  
 
 ```js
-    $(finction() {
+    $(function() {
         var p = $("p");
         
         p.first().wrapAll("</pre>");
     });
-```
+    ```
 
 <p style="text-align:justify">A wrapInner() eljárás segítségével egy adott elem tartalmát csomagolhatjuk be egy elembe. Tehát, ha az első p elemünk köré wrapInner()-el hozzáadunk egy strong elemet, akkor a strong elem a p elemen belül jelenik majd meg.</p>
 
 ```js
-     $(finction() {
+     $(function() {
         var p = $("p");
         
         p.first().wrapInner("<strong />");
     });
- ```
+```
 
 <p style="text-align:justify">Az elemek hozzáadása során használhatunk rövidítést a fent bemutatott módon, így nem kell mindig leírnunk a nyitó és záró tag-eket, elég csak egy, saját magát lezáró elem.</p>
 
@@ -84,36 +84,136 @@ Az alábbi kód segítségével az első p elemet becsomagoltuk egy div elembe.
 
 <p style="text-align:justify">Az append() és a prepend() testvér eljárások. Mind a kettő az előzőleg megadott elemet helyezi el a kijelölt elemen belül. A különbség az, hogy az append() az elemben lévő elemek mögé helyezi el az új elemet, míg a prepend() az elemek elé.</p>  
 
-```html
-
-
+```js
+     $(function() {
+        var p = $("p");
+        
+        p.first().append("<span>append</span>");
+        p.first().prepend("<span>prepend</span>");
+    });
 ```
 
-<p style="text-align:justify"></p>
-
+<p style="text-align:justify">Az appendTo() és prependTo() ugyan azt a feladatot látja el, mint a append() és a prepend(), csak másfajta megközelítést használ. Ebben az esetben a hozzáadni kívánt elem a kijelölő helyén helyezkedik el, a kijelölő pedig a függvény értékeként.</p>
 
 ```js
- 
- 
- ```
-
-<p style="text-align:justify"></p>
-
-<p style="text-align:justify"></p>
-
-
-```html
-
-
+     $(function() {
+        var p = $("p");
+        
+        $("<span>append</span>").appendTo(p);
+        $("<span>append</span>").prependTo(p);
+    });
 ```
 
-<p style="text-align:justify"></p>
+#### Hozzáadás elemen kívül
 
+##### after() before() insertAfter() insertBefore()
+
+<p style="text-align:justify">Az elemen kívüli hozzáadás eljárások az elemen belüliek ellentéte, vagyis a kijelölt elem elő vagy mögé helyezik el a megadott elemet.</p>
+
+<p style="text-align:justify">Az after(), before() eljárás értelemszerűen az elem elé és mögé helyezi el az új elemet. A létrehozott két új bekezdés a megadott bekezdéssel egy szinten kerül beszúrásra, az elem elé és mögé.</p>
 
 ```js
- 
- 
- ```
+     $(function() {
+        var p = $("p");
+        
+        p.last().before("<p>before</p>");
+        p.last().after("<p>after</p>");
+    });
+```
 
-<p style="text-align:justify"></p>
+<p style="text-align:justify">Az insertBefore() és insertAfter() az appendTo és a prependTo logikájával egyenértékűek, vagyis elsőként kell megadnunk a beszúrni kívánt elemet, míg másodikként az eljáráson belül a kijelölőt.</p>
 
+### Elem eltávolítása – remove(), empty()  
+
+<p style="text-align:justify">A remove() eljárás segítségével nem csak elemeket távolíthatunk el a DOM-ből hanem eljárásokat is. Használata a fent említett módosító függvényekéhez hasonló. Kijelöljük az elemeket, majd hozzáfűzzük a remove() eljárást. A remove() eljárást tovább szűrhetjük. Ha csak az olyan p elemeket akarjuk kiszűrni, amiknek van egy class tulajdonsága, akkor a függvényen belül meg kell adnunk ezt a kijelölőt.</p>  
+
+```js
+      $(function() {
+        var p = $("p");
+        
+        p.remove();
+        p.remove(".first");
+    }); 
+```
+
+<p style="text-align:justify">Az empty() eljárás segítségével kiüríthetjük a kijelölt elemet, tehát kitörölhetjük a gyerek elemeit. Természetesen ettől a kijelölt elem megmarad, viszont az összes tartalma eltűnik.</p>
+
+```js
+      $(function() {
+        var p = $("p");
+        
+        p.first().empty();
+    });  
+```
+
+### CSS tulajdonság módosítása – css()
+
+<p style="text-align:justify">A css() eljárás egy erőteljes és jól használható eszköz. A text() és html() eljáráshoz hasonlóan ez is képes csak érték visszaadásra, ha az eljáráson belül csak a CSS tulajdonság nevét adjuk meg akkor annak értékét kapjuk vissza. Figyelnünk kell arra, hogy az itt használt tulajdonságok megadása során nem használhatunk a CSS-ben megszokott rövidítést, mint a margin, helyette mindig a pontos meghatározást kell megadnunk, mint a margin-right/margin-left.</p>
+
+```js
+      $(function() {
+        var bg = $("p").css("background");
+        
+        alert(bg);
+    });  
+```
+
+Az eljárás használatának a megszokott módja a név – értékpárok alkalmazása:  
+
+```js
+      $(function() {
+        var p = $("p");
+        
+        p.last().css("background", "aqua");
+    });  
+```
+
+<p style="text-align:justify"><Jól látható, hogy így több tulajdonságot nem tudunk megadni egyszerre. Szerencsére erre is létezik megoldás./p>
+
+```js
+       $(function() {
+        var p = $("p");
+        
+        p.first().css({
+            "background" : "aqua"),
+            "padding-left" : "50px"
+            });
+    });  
+```
+
+<p style="text-align:justify">Nagy mennyiségű használat során ez a megoldás nem a legkifinomultabb. Ha sokat használunk ehhez hasonló kódokat, akkor érdemes megfontolnunk a osztály kijelölő módosító eljárások használatát. Így előre megírhatjuk egy elem formázását CSS-ben és egy addig nem létező osztályhoz rendelhetjük őket. Ezt az osztályt később jQuery segítségével hozzáadjuk.</p>
+
++ addClass() – Hozzáad egy, vagy több elemet a kijelölt elemhez.  
+
++ removeClass() – Eltávolít egy, vagy több elemet a kijelölt elemhez.  
+
++ toggleClass() – Váltogat a hozzáadás és eltávolítás között attól függően, hogy létezik, vagy sem az adott érték.
+
+```js
+      $(function() {
+        var p = $("p");
+        
+        p.last().addClass("test");
+        p.last().removeClass("test");
+        p.last().toggleClass("test");
+    });  
+```
+
+### Új elemek létrehozása  
+
+<p style="text-align:justify">A fent taglalt függvényekkel hozzáadás során megadhatjuk a zárójelek között a hozzáadni kívánt elemeket és azok tulajdonságai, azonban sok esetben ez körülményes. Van egy jobb és átláthatóbb megoldás is!</p>
+
+```js
+      $(function() {
+        var p = $("p").last();
+        
+        var newDiv = $("<div />", {
+            "text" : "Elem hozzáadása komplex elem létrehozásával",
+            "class" : "box"
+        }).appendTo(p);
+    });  
+```
+
+<p style="text-align:justify">Ezzel a módszerrel objektumszerűen hozhatunk létre új elemeket. Első lépésben az elem típusát adjuk meg, majd ezután a tulajdonságait.</p>
+
+<p style="text-align:justify">A DOM módosítások megértésével már kézzel fogható jQuery tudásunk van, hiszen már komoly változtatásokat tudunk végrehajtani a dokumentumunkban.</p>
