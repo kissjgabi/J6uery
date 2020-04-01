@@ -58,9 +58,9 @@
 
 <p style="text-align:justify">A DOM egyes csomópontjaira egykönnyen tudunk hivatkozni illetve bejárni azokat jQuery segítségével.</p>
 
-<p style="text-align:justify">A JavaScript kódot, vagy a linket a külső fájlhoz két helyre tudjuk beszúrni a HTML fájlunkban: a head részbe és a záró body tag elé. Az utóbbinak a teljesítmény szempontjából van jelentősége, hiszen a kód a HTML kód után töltődik le.
+<p style="text-align:justify">A JavaScript kódot, vagy a linket a külső fájlhoz két helyre tudjuk beszúrni a HTML fájlunkban: a head részbe és a záró body tag elé. Az utóbbinak a teljesítmény szempontjából van jelentősége, hiszen a kód a HTML kód után töltődik le.</p>
     
-Ezzel elő is jön az első probléma a JavaScript kódok futtatása során. Ha a JavaScript/jQuery kód a head részben található, akkor a kód az előtt fut le, mielőtt létre jönne maga a HTML dokumentum és annak a DOM-ja, vagyis mivel a kód lefutásakor még nem létezik, így módosítani/hozzáférni sem tudunk. Erre jelenthet megoldást a már említett záró body tag előtti elhelyezés, vagy a JavaScript-ben használatos onload eljárás jQuery megfelelője a ready() eljárás.</p>
+<p style="text-align:justify">Ezzel elő is jön az első probléma a JavaScript kódok futtatása során. Ha a JavaScript/jQuery kód a head részben található, akkor a kód az előtt fut le, mielőtt létre jönne maga a HTML dokumentum és annak a DOM-ja, vagyis mivel a kód lefutásakor még nem létezik, így módosítani/hozzáférni sem tudunk. Erre jelenthet megoldást a már említett záró body tag előtti elhelyezés, vagy a JavaScript-ben használatos onload eljárás jQuery megfelelője a ready() eljárás.</p>
 
 ```js
     $(document).ready(function() {
@@ -68,9 +68,9 @@ Ezzel elő is jön az első probléma a JavaScript kódok futtatása során. Ha 
     });
 ```
 
-<p style="text-align:justify">A fenti kódrészlet belsejében található console.log() függvény akkor fut le, ha a dokumentum teljesen betöltött. A kijelelőben található document elnevezéssel a dokumentumot jelöljük ki, míg a ready() eljárás segítségével elérhetjük, hogy a kód az oldal letöltődése után fusson le, vagyis akkor amikor már kész a HTML szerkezet.  
+<p style="text-align:justify">A fenti kódrészlet belsejében található console.log() függvény akkor fut le, ha a dokumentum teljesen betöltött. A kijelelőben található document elnevezéssel a dokumentumot jelöljük ki, míg a ready() eljárás segítségével elérhetjük, hogy a kód az oldal letöltődése után fusson le, vagyis akkor amikor már kész a HTML szerkezet.</p> 
 
-Ugyanennek a megoldásnak létezik egy rövidebb változata, melyben a $ (jQuery definiáló karakter) után egy üres függvényt nyitunk, amiben elhelyezzük a futtatni kívánt kódot. Az üres függvény hívás egy megszokott eljárás jQuery-ben, amivel még sokat találkozunk az egyéb eljárások visszatérése során.</p>
+<p style="text-align:justify">Ugyanennek a megoldásnak létezik egy rövidebb változata, melyben a $ (jQuery definiáló karakter) után egy üres függvényt nyitunk, amiben elhelyezzük a futtatni kívánt kódot. Az üres függvény hívás egy megszokott eljárás jQuery-ben, amivel még sokat találkozunk az egyéb eljárások visszatérése során.</p>
 
 ```js
     $(function() {
