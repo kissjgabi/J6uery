@@ -17,6 +17,8 @@ Adott az alábbi DOM szerkezet:
     </div>
 ```
 
+<div style="text-align:center"><img src="szerkezet_dombejaras01.png" /></div>
+
 <p style="text-align:justify">Jól látható, hogy szerkezetileg a p elemek a div elem gyerekei, vagyis a div elem a p elemek szülő eleme. Tudjuk azt is, hogy a p elemek egymás testvérei, mivel egy szinten helyezkednek el. Tovább megfigyelhetjük azt is, hogy a strong elem a div elem leszármazottja, valamint a div elem a strong elem ős eleme. Ez a tudás valószínű ismerős a HTML/CSS ismereteink megszerzése során. Nézzünk pár kijelölést!</p>
 
 Elsőként jelöljük ki a második p elemet:
