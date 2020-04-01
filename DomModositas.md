@@ -168,7 +168,7 @@ Az eljárás használatának a megszokott módja a név – értékpárok alkalm
     });  
 ```
 
-<p style="text-align:justify"><Jól látható, hogy így több tulajdonságot nem tudunk megadni egyszerre. Szerencsére erre is létezik megoldás./p>
+<p style="text-align:justify">Jól látható, hogy így több tulajdonságot nem tudunk megadni egyszerre. Szerencsére erre is létezik megoldás.</p>
 
 ```js
        $(function() {
