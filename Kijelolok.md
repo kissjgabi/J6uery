@@ -1,6 +1,6 @@
 ## Kijelölők  
 
-<p style="text-align:justify;">A jQuery népszerűsége az egyszerűségében és a használhatóságában rejlik. Ahhoz, hogy kijelöljünk az oldalunkon egy elemet nincs más dolgunk, mint használni a CSS-ben megszerzett, kijelölőkkel kapcsolatos tudásunkat. A CSS-ben használatos kijelölők mindegyikét alkalmazhatjuk egy-egy jQuery kijelölésben. JavaScript-ben a getElementById() eljáráson kívül – ami az ideális esetben csak egy eredményt ad vissza – ciklust kellett alkalmaznunk, hogy megtaláljuk a tömbünkben a megfelelő elemet. A jQuery-ben véget vetettek a nehézkes kijelölésnek és igyekeztek a lehető legintuitívabb megoldásokat alkalmazni, sikerrel!  
+<p style="text-align:justify;">A jQuery népszerűsége az egyszerűségében és a használhatóságában rejlik. Ahhoz, hogy kijelöljünk az oldalunkon egy elemet nincs más dolgunk, mint használni a CSS-ben megszerzett, kijelölőkkel kapcsolatos tudásunkat. A CSS-ben használatos kijelölők mindegyikét alkalmazhatjuk egy-egy jQuery kijelölésben. JavaScript-ben a getElementById() eljáráson kívül – ami az ideális esetben csak egy eredményt ad vissza – ciklust kellett alkalmaznunk, hogy megtaláljuk a tömbünkben a megfelelő elemet. A jQuery-ben véget vetettek a nehézkes kijelölésnek és igyekeztek a lehető legintuitívabb megoldásokat alkalmazni, sikerrel!</p>
     
 <p style="text-align:justify">Ne felejtsük el, hogy a jQuery is javascript, ezért úgy hozzuk létre oldalunkat, hogy ha a javascript ki van kapcsolva a böngészőben, akkor is élvezhető legyen az oldal használata.</p>
 
@@ -108,7 +108,7 @@ Egy egyszerű példával illusztrálva a dolog, a következőképpen néz ki:
     );
 ```
   
-<p style="text-align:justify">A fenti kódnál a HTML rész a korábban megadott 3db bekezdés. A bekezdés elemekhez hozzáadtunk egy kattintás eljárást, ezen belül pedig ugyan ehhez az elemhez – a this kulcsszó segítségével – egy css() eljárást.</p>  
+<p style="text-align:justify">A fenti kódnál a HTML rész a korábban megadott három db bekezdés. A bekezdés elemekhez hozzáadtunk egy kattintás eljárást, ezen belül pedig ugyan ehhez az elemhez – a this kulcsszó segítségével – egy css() eljárást.</p>  
 
 ### Cache – avagy a jQuery gyorsítótárazás  
 
