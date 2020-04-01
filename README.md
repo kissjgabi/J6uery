@@ -6,6 +6,7 @@
 
 [03 DOM bejárás](DomBejaras.md)
 
+[04 DOM módosítás](DomModositas.md)
 
 ```html
 Szoftverfejlesztő képzés A.D.MMXX
