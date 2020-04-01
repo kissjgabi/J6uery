@@ -62,7 +62,7 @@ Az alábbi kód segítségével az első p elemet becsomagoltuk egy div elembe.
         
         p.first().wrapAll("</pre>");
     });
-    ```
+```
 
 <p style="text-align:justify">A wrapInner() eljárás segítségével egy adott elem tartalmát csomagolhatjuk be egy elembe. Tehát, ha az első p elemünk köré wrapInner()-el hozzáadunk egy strong elemet, akkor a strong elem a p elemen belül jelenik majd meg.</p>
 
