@@ -63,7 +63,7 @@
 <p style="text-align:justify">Felmerül a kérdés, milyen gyakorlati haszna lehet ennek a dolognak? A későbbi tanulmányaink során bőven találkozhatunk a trigger() eljárással, azonban most nézzünk egy esetet, amikor egy tetszőleges link elemhez rendelünk egy submit eseményt egy űrlapon belül.</p>  
 
 ```html
-    <form method=""GET>
+    <form method="GET">
         <a>Űrlap küldése</a>
     </form>
 ```
@@ -154,16 +154,35 @@
 
 <p style="text-align:justify">Az Esemény Terjedés, vagyis az Event Propagation szintén egy alapvető jQuery problémára kínál megoldást. Mégpedig a gyerek szülő elemekben található események külön futtatására.</p>  
 
+```html
+    <p><span>Propagation</span> Egy normális bekezdés </p>
+```
 
+```js
+    $(function() {
+        $("span").on("click", (function() {
+            alert("Span elem kattintás!");
+        });
+        $("p").on("click", (function() {
+            alert("P elem kattintás!");
+        });
+    });
+```
 
+<p style="text-align:justify">Az elmélet a következő: ha egy ős – leszármazott kapcsolat során, mind az ős és mind a leszármazott kap egy eseményt, akkor a gyerek esemény megörökli az ős elem eseményét.</p>  
 
-<p style="text-align:justify"></p>  
+<p style="text-align:justify">A megoldásban a már megismert esemény objektum lesz a segítségünkre, ami nem csak adatokat, de függvényeket is tartalmaz. A leszármazott eseményt meghívjuk, az event objektummal és használjuk a stopPropagation() függvényt, ami megállítja, hogy lefusson az ős eseménye.</p>  
 
-<p style="text-align:justify"></p>  
+```js
+    $(function() {
+        $("span").on("click", (function(event) {
+            alert("Span elem kattintás!");
+            event.stopPropagation();    
+        });
+        $("p").on("click", (function() {
+            alert("P elem kattintás!");
+        });
+    });
+```
 
-
-<p style="text-align:justify"></p>  
-
-<p style="text-align:justify"></p>  
-
-
+<p style="text-align:justify">Az esemény a JavaScript lelke. Hatalmas dinamikát adhatunk a segítségével az oldalunknak. A jQuery-ben tovább fejlesztették őket és jóval könnyebben kezelhetőek.</p>  
