@@ -19,7 +19,7 @@
 ```
    <pre>
         <code>
-               P R E F O R M T T E D   S Z Ö V E G
+               P R E F O R M A T T E D   S Z Ö V E G
         </code>
    </pre>
 ```
@@ -52,7 +52,7 @@
       ```
          <pre>
               <code>
-                     P R E F O R M T T E D   S Z Ö V E G
+                     P R E F O R M A T T E D   S Z Ö V E G
               </code>
          </pre>
        ```
