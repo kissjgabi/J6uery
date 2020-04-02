@@ -21,6 +21,7 @@
 <p style="text-align:justify"></p>
 
 
+# Sablonok
 
 ```html
    <html> code 
@@ -47,9 +48,23 @@
  ```
 
 <div style="width: 100%; text-align: center;">
-<button onclick="window.location.href = 'bevezetes01demo.html';">
+<button onclick="window.location.href = '#';">
  Button.css("text-align", "center")
 </button>
 </div>  
+
+## S O U R C E S
+
+```
+  ```html
+   <html> code 
+  ```
+   <pre>
+        <code>
+               P R E F O R M T T E D   S Z Ö V E G
+        </code>
+   </pre>
+ ```
+
 
 
