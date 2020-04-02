@@ -63,3 +63,13 @@
       </button>
       </div>  
 ```
+
+----
+
+[Markdown: Basic Syntax](https://www.markdownguide.org/basic-syntax)
+
+[Markdown: How Insert Images](https://www.xaprb.com/blog/how-to-style-images-with-markdown/)
+
+[Markdown: Guide](https://www.markdownguide.org/)
+
+[Markdown: Guide Book](https://github.com/mattcone/markdown-guide-book/)
