@@ -1,6 +1,6 @@
 
 ```html
-    [Kiss József Gábor](https://)
+    Tananyag 2019/2020
 ```
 
 ## Welcome to J6uery HU Pages
@@ -19,6 +19,8 @@
 
 ```html
     [Szoftverfejlesztő képzés A.D.MMXX](http://www.poganysuli.hu/)
+    
+    [Kiss József Gábor](https://)
 ```
 
 [Sablonok](Templates.md)
