@@ -30,7 +30,7 @@
 
 <p style="text-align:center">Középre igazított szöveg</p>
 
-<div style="text-align:center"><img src="console_kijelolok01.png" /></div>
+<div style="text-align:center"><img src="centerImageInPage.png" /></div>
 
 <div style="width: 100%; text-align: center;">
 <button onclick="window.location.href = 'bevezetes01demo.html';">
