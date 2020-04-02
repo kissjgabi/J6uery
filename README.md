@@ -18,7 +18,7 @@
 [06 Animációk](Animaciok.md)
 
 ```html
-    [Szoftverfejlesztő képzés A.D.MMXX](http://www.poganysuli.hu/)
+    [Szoftverfejlesztő képzés A.D. MMXX](http://www.poganysuli.hu/)
     
     [Kiss József Gábor](https://kissjgabi.github.io/J6uery/)
 ```
