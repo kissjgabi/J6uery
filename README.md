@@ -20,3 +20,5 @@
 ```html
     [Szoftverfejlesztő képzés A.D.MMXX](http://www.poganysuli.hu/)
 ```
+
+[Sablonok](Templates.md)
