@@ -20,7 +20,7 @@
 ```html
     [Szoftverfejlesztő képzés A.D.MMXX](http://www.poganysuli.hu/)
     
-    [Kiss József Gábor](https://)
+    [Kiss József Gábor](https://kissjgabi.github.io/J6uery/)
 ```
 
 [Sablonok](Templates.md)
