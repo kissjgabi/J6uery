@@ -1,9 +1,8 @@
+# Jquery
 
-```html
-    Tananyag 2019/2020
-```
+weboldalak fejlesztése 2.évfolyam
 
-## Welcome to J6uery HU Pages
+## Jquery basics
 
 [01 Bevezetés](Bevezetes.md)
 
@@ -17,10 +16,7 @@
 
 [06 Animációk](Animaciok.md)
 
-```html
-    [Szoftverfejlesztő képzés A.D. MMXX](http://www.poganysuli.hu/)
-    
-    [Kiss József Gábor](https://kissjgabi.github.io/J6uery/)
-```
+## Home
 
-[Sablonok](Templates.md)
+> [B6SicS](https://b6sics.github.io)
+>
