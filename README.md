@@ -1,4 +1,4 @@
-# Jquery
+# J6uery
 
 weboldalak fejlesztése 2.évfolyam
 
