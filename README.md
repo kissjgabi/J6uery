@@ -2,7 +2,7 @@
 
 weboldalak fejlesztése 2.évfolyam
 
-## Jquery basics
+## jQuery basics
 
 [01 Bevezetés](Bevezetes.md)
 
